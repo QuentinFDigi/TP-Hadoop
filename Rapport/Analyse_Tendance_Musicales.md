@@ -1,10 +1,3 @@
-<p>
-  <img src="../img/diginamic.png" alt="Diginamic Logo" width="48%">
-  <img src="../img/hadoop.png" alt="Hadoop Logo" width="48%">
-</p>
-
-<br>
-
 # **Analse des tendances musicales avec Hadoop**
 
 <br>
@@ -16,7 +9,7 @@
   - [**Introduction**](#introduction)
   - [**Présentation des données**](#présentation-des-données)
   - [**Connexion à la machine virtuelle**](#connexion-à-la-machine-virtuelle)
-  - [Paramètres utilisés :](#paramètres-utilisés-)
+  - [**Lancement des services Hadoop**](#lancement-des-services-hadoop)
 
 <div style="ppage-break-after: always;"></div>
 
@@ -57,4 +50,26 @@ La connexion à la machine virtuelle avec le logiciel **PuTTY** via le protocole
 ![Configuration PuTTY](../Images/PuTTY.png)
 
 Paramètres utilisés :
-- 
+- **Adresse IP** : fournie par l'infrastructure
+- **Port SSH** : spécifique à l'environnement
+- **Utilisateur / mot de passe** : fournis pour le TP
+
+Une fois connecté, l'ensemble des traitements est réalisé depuis le conteneur Hadoop.
+
+On commence d'ailleurs par lancer le shell : ./start_docker_digi.sh, qui éffectue les commandes suivantes :
+
+```bash
+
+```
+
+<div style="page-break-after: always;"></div>
+
+## **Lancement des services Hadoop**
+
+---
+
+Les services nécessaires au TP sont:
+- **HDFS** : stockage distribué,
+- **YARN** : gestion des ressources,
+- **ZooKeeper** : coordination,
+- **HBase** : base NoSQL distribuée.
